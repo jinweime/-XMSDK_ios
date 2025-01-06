@@ -1244,15 +1244,15 @@ PODS:
   - XMSDK_ios (0.1.0):
     - AFNetworking (~> 4.0)
     - AppLovinSDK
-    - FBSDKCoreKit (~> 17.0.2)
-    - FBSDKLoginKit (~> 17.0.2)
-    - FBSDKShareKit (~> 17.0.2)
-    - FirebaseAnalytics (~> 10.27.0)
-    - FirebaseAuth (~> 10.27.0)
-    - FirebaseCore (~> 10.27.0)
-    - FirebaseCoreExtension (~> 10.27.0)
-    - FirebaseFirestore (~> 10.27.0)
-    - FirebaseFirestoreInternal (~> 10.27.0)
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
+    - FirebaseAnalytics
+    - FirebaseAuth
+    - FirebaseCore
+    - FirebaseCoreExtension
+    - FirebaseFirestore
+    - FirebaseFirestoreInternal
     - Google-Mobile-Ads-SDK
     - MFSIdentifier (~> 1.0.2)
     - SJVideoPlayer
@@ -1350,7 +1350,7 @@ SPEC CHECKSUMS:
   SJBaseVideoPlayer: b3122de12225b27b71bd9a8a1f08f4dcf2f4e5ec
   SJUIKit: a40111941e408cc17d4c1c23495aa92999e814b0
   SJVideoPlayer: 4f09814f58522e0975cb2dccfda925f6c8643467
-  XMSDK_ios: b6a8cbd86be9e114df8d4b1cdc382c24b1b6c081
+  XMSDK_ios: 7053deb92150a2b7a7f9cfb5c7f44927f6d9e571
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 

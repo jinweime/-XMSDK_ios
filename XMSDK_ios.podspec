@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XMSDK_ios'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'XMSDK_ios.'
 
 # This description is used to generate tags and improve search results.
@@ -43,15 +43,15 @@ TODO: Add long description of the pod here.
   s.dependency 'YYModel', '~> 1.0.4'
   s.dependency 'SJVideoPlayer'
   s.dependency 'MFSIdentifier', '~> 1.0.2'
-  s.dependency 'FBSDKCoreKit', '~> 17.0.2'
-  s.dependency 'FBSDKLoginKit', '~> 17.0.2'
-  s.dependency 'FBSDKShareKit', '~> 17.0.2'
-  s.dependency 'FirebaseCore', '~> 10.27.0'
-  s.dependency 'FirebaseCoreExtension', '~> 10.27.0'
-  s.dependency 'FirebaseFirestoreInternal', '~> 10.27.0'
-  s.dependency 'FirebaseAnalytics', '~> 10.27.0'
-  s.dependency 'FirebaseAuth', '~> 10.27.0'
-  s.dependency 'FirebaseFirestore', '~> 10.27.0'
+  s.dependency 'FBSDKCoreKit'
+  s.dependency 'FBSDKLoginKit'
+  s.dependency 'FBSDKShareKit'
+  s.dependency 'FirebaseCore'
+  s.dependency 'FirebaseCoreExtension'
+  s.dependency 'FirebaseFirestoreInternal'
+  s.dependency 'FirebaseAnalytics'
+  s.dependency 'FirebaseAuth'
+  s.dependency 'FirebaseFirestore'
   s.dependency 'Google-Mobile-Ads-SDK'
   s.dependency 'AppLovinSDK'
 end

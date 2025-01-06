@@ -50,31 +50,31 @@
       "~> 1.0.2"
     ],
     "FBSDKCoreKit": [
-      "~> 17.0.2"
+
     ],
     "FBSDKLoginKit": [
-      "~> 17.0.2"
+
     ],
     "FBSDKShareKit": [
-      "~> 17.0.2"
+
     ],
     "FirebaseCore": [
-      "~> 10.27.0"
+
     ],
     "FirebaseCoreExtension": [
-      "~> 10.27.0"
+
     ],
     "FirebaseFirestoreInternal": [
-      "~> 10.27.0"
+
     ],
     "FirebaseAnalytics": [
-      "~> 10.27.0"
+
     ],
     "FirebaseAuth": [
-      "~> 10.27.0"
+
     ],
     "FirebaseFirestore": [
-      "~> 10.27.0"
+
     ],
     "Google-Mobile-Ads-SDK": [
 
