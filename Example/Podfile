@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'XMSDK_ios_Example' do
+  pod 'XMSDK_ios', :path => '../'
+
+  target 'XMSDK_ios_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
