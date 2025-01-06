@@ -1,0 +1,86 @@
+{
+  "name": "XMSDK_ios",
+  "version": "0.1.0",
+  "summary": "XMSDK_ios.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jinweime/-XMSDK_ios",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Mingsheng Zhang": "1046724509@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/jinweime/-XMSDK_ios",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "XMSDK_ios/Classes/**/*",
+  "resource_bundles": {
+    "bundle": [
+      "XMSDK_ios/Assets/*"
+    ]
+  },
+  "static_framework": true,
+  "public_header_files": "XMSDK_ios/Classes/**/*.h",
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "AVFoundation",
+    "AudioToolbox",
+    "Speech"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+      "~> 4.0"
+    ],
+    "YYCategories": [
+      "~> 1.0.4"
+    ],
+    "YYModel": [
+      "~> 1.0.4"
+    ],
+    "SJVideoPlayer": [
+
+    ],
+    "MFSIdentifier": [
+      "~> 1.0.2"
+    ],
+    "FBSDKCoreKit": [
+      "~> 17.0.2"
+    ],
+    "FBSDKLoginKit": [
+      "~> 17.0.2"
+    ],
+    "FBSDKShareKit": [
+      "~> 17.0.2"
+    ],
+    "FirebaseCore": [
+      "~> 10.27.0"
+    ],
+    "FirebaseCoreExtension": [
+      "~> 10.27.0"
+    ],
+    "FirebaseFirestoreInternal": [
+      "~> 10.27.0"
+    ],
+    "FirebaseAnalytics": [
+      "~> 10.27.0"
+    ],
+    "FirebaseAuth": [
+      "~> 10.27.0"
+    ],
+    "FirebaseFirestore": [
+      "~> 10.27.0"
+    ],
+    "Google-Mobile-Ads-SDK": [
+
+    ],
+    "AppLovinSDK": [
+
+    ]
+  }
+}

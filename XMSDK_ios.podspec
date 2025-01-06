@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'XMSDK_ios'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of XMSDK_ios.'
+  s.summary          = 'XMSDK_ios.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,22 +21,37 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Mingsheng Zhang/XMSDK_ios'
+  s.homepage         = 'https://github.com/jinweime/-XMSDK_ios'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Mingsheng Zhang' => '1046724509@qq.com' }
-  s.source           = { :git => 'https://github.com/Mingsheng Zhang/XMSDK_ios.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/jinweime/-XMSDK_ios', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.platform = :ios, '13.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'XMSDK_ios/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'XMSDK_ios' => ['XMSDK_ios/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.resource_bundles = {
+    'bundle' => ['XMSDK_ios/Assets/*']
+  }
+  s.static_framework = true
+  s.public_header_files = 'XMSDK_ios/Classes/**/*.h'
+  s.frameworks = 'UIKit', 'Foundation', 'AVFoundation', 'AudioToolbox', 'Speech'
+  s.dependency 'AFNetworking', '~> 4.0'
+  s.dependency 'YYCategories', '~> 1.0.4'
+  s.dependency 'YYModel', '~> 1.0.4'
+  s.dependency 'SJVideoPlayer'
+  s.dependency 'MFSIdentifier', '~> 1.0.2'
+  s.dependency 'FBSDKCoreKit', '~> 17.0.2'
+  s.dependency 'FBSDKLoginKit', '~> 17.0.2'
+  s.dependency 'FBSDKShareKit', '~> 17.0.2'
+  s.dependency 'FirebaseCore', '~> 10.27.0'
+  s.dependency 'FirebaseCoreExtension', '~> 10.27.0'
+  s.dependency 'FirebaseFirestoreInternal', '~> 10.27.0'
+  s.dependency 'FirebaseAnalytics', '~> 10.27.0'
+  s.dependency 'FirebaseAuth', '~> 10.27.0'
+  s.dependency 'FirebaseFirestore', '~> 10.27.0'
+  s.dependency 'Google-Mobile-Ads-SDK'
+  s.dependency 'AppLovinSDK'
 end

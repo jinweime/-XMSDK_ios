@@ -1,0 +1,6 @@
+framework module XMSDK_ios {
+  umbrella header "XMSDK_ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

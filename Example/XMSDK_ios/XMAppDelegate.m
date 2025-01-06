@@ -7,12 +7,17 @@
 //
 
 #import "XMAppDelegate.h"
+#import "XMSDKIOS.h"
 
 @implementation XMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[XMSDKIOS sharedInstance]startWithConfig:[XMSDKIOSConfig configWithBaseUrl:@"https://www.comicsapp.store/api"
+                                loginPath:@"userLog"
+                             buyGoodsPath:@"buyGoodsApple"
+                               buyVipPath:@"buyVipApple"]];
     return YES;
 }
 

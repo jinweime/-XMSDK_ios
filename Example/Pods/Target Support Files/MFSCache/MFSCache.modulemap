@@ -1,0 +1,6 @@
+framework module MFSCache {
+  umbrella header "MFSCache-umbrella.h"
+
+  export *
+  module * { export * }
+}
