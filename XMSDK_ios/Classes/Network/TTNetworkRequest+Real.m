@@ -8,8 +8,8 @@
 
 #import "TTNetworkRequest+Real.h"
 #import "TTHTTPAgent.h"
-#import <YYModel.h>
-#import <NSObject+YYModel.h>
+#import <YYModel/YYModel.h>
+#import <YYModel/NSObject+YYModel.h>
 #import "UserModel.h"
 #import "UserManager.h"
 #import "XMSDKIOS.h"

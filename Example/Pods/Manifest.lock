@@ -968,16 +968,6 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.32):
     - BoringSSL-GRPC/Interface (= 0.0.32)
   - BoringSSL-GRPC/Interface (0.0.32)
-  - FBAEMKit (17.0.3):
-    - FBSDKCoreKit_Basics (= 17.0.3)
-  - FBSDKCoreKit (17.0.3):
-    - FBAEMKit (= 17.0.3)
-    - FBSDKCoreKit_Basics (= 17.0.3)
-  - FBSDKCoreKit_Basics (17.0.3)
-  - FBSDKLoginKit (17.0.3):
-    - FBSDKCoreKit (= 17.0.3)
-  - FBSDKShareKit (17.0.3):
-    - FBSDKCoreKit (= 17.0.3)
   - FirebaseAnalytics (10.27.0):
     - FirebaseAnalytics/AdIdSupport (= 10.27.0)
     - FirebaseCore (~> 10.0)
@@ -1241,12 +1231,9 @@ PODS:
     - SJVideoPlayer/Common
   - SJVideoPlayer/ResourceLoader (3.4.3):
     - SJBaseVideoPlayer (>= 3.7.5)
-  - XMSDK_ios (0.1.0):
+  - XMSDK_ios (0.1.2):
     - AFNetworking (~> 4.0)
     - AppLovinSDK
-    - FBSDKCoreKit
-    - FBSDKLoginKit
-    - FBSDKShareKit
     - FirebaseAnalytics
     - FirebaseAuth
     - FirebaseCore
@@ -1272,11 +1259,6 @@ SPEC REPOS:
     - AFNetworking
     - AppLovinSDK
     - BoringSSL-GRPC
-    - FBAEMKit
-    - FBSDKCoreKit
-    - FBSDKCoreKit_Basics
-    - FBSDKLoginKit
-    - FBSDKShareKit
     - FirebaseAnalytics
     - FirebaseAppCheckInterop
     - FirebaseAuth
@@ -1317,11 +1299,6 @@ SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   AppLovinSDK: fdae6a4361c9c9b09f8d7d18ede792368221d987
   BoringSSL-GRPC: 1e2348957acdbcad360b80a264a90799984b2ba6
-  FBAEMKit: 9900b2edd99a2d21629a6277e6166f14c6215799
-  FBSDKCoreKit: 0791f8f68a8630931a4c12aa23a56cc021551596
-  FBSDKCoreKit_Basics: 46d6b472c0dd0a5a7e972c025033d1c567f54eb4
-  FBSDKLoginKit: b4a4eba1d62eb452544411824f41689adabd5bd2
-  FBSDKShareKit: eb1169eafe3c06f881dc6deed2d7979585b16959
   FirebaseAnalytics: f9211b719db260cc91aebee8bb539cb367d0dfd1
   FirebaseAppCheckInterop: 6a1757cfd4067d8e00fccd14fcc1b8fd78cfac07
   FirebaseAuth: 77a012b7e08042bf44d0db835ca2e86e6ca7bbd3
@@ -1350,7 +1327,7 @@ SPEC CHECKSUMS:
   SJBaseVideoPlayer: b3122de12225b27b71bd9a8a1f08f4dcf2f4e5ec
   SJUIKit: a40111941e408cc17d4c1c23495aa92999e814b0
   SJVideoPlayer: 4f09814f58522e0975cb2dccfda925f6c8643467
-  XMSDK_ios: 7053deb92150a2b7a7f9cfb5c7f44927f6d9e571
+  XMSDK_ios: 745f50f0d6eb1504b75f3ec43042432b61a3ea95
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
