@@ -10,8 +10,7 @@
 #import "XMSDKIOSConfig.h"
 #import "XMAppleIAP.h"
 @import GoogleMobileAds;
-#import "Firebase.h"
-
+#import <Firebase/Firebase.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface XMSDKIOS : NSObject
