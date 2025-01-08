@@ -8,10 +8,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "XMSDKIOSConfig.h"
-#import <FirebaseCore/FirebaseCore.h>
-#import <FirebaseAuth/FirebaseAuth.h>
 #import "XMAppleIAP.h"
 @import GoogleMobileAds;
+#import "Firebase.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
