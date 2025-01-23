@@ -18,6 +18,7 @@ typedef enum {
 
 @interface XMAppleIAP :NSObject
 + (instancetype)sharedInstance;
+- (void)queryProductsWithIDs:(NSArray<NSString *>*)ids success:(nonnull void (^)(NSArray<SKProduct *> *))sucess;
 - (void)startPurchaseWithID:(NSString *)purchID
                        type:(XMAppleIAPType)type
                     success:(nonnull void (^)(NSString *transactionId, NSString *purchaseReceipt))sucess

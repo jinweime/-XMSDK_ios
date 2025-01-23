@@ -10,6 +10,7 @@
 
 @interface XMAppleIAP ()<SKPaymentTransactionObserver,SKProductsRequestDelegate>
 @property(nonatomic, strong) NSString *currentPurchaseID;
+@property(nonatomic, copy) void (^products)(NSArray<SKProduct *> * p);
 @property(nonatomic, copy) void (^sucess)(NSString *transactionId, NSString *purchaseReceipt);
 @property(nonatomic, copy) void (^failure)(NSInteger code, NSString *message);
 @end
@@ -38,15 +39,31 @@
     [[SKPaymentQueue defaultQueue] removeTransactionObserver:self];
 }
 
+- (void)queryProductsWithIDs:(NSArray<NSString *>*)ids success:(nonnull void (^)(NSArray<SKProduct *> *))sucess{
+    self.products = ^(NSArray<SKProduct *> *ps) {
+        if(sucess){
+            sucess(ps);
+        }
+    };
+    NSSet *nsset = [NSSet setWithArray:ids];
+    SKProductsRequest *request = [[SKProductsRequest alloc] initWithProductIdentifiers:nsset];
+    request.delegate = self;
+    [request start];
+}
+
 - (void)startPurchaseWithID:(NSString *)purchID
                        type:(XMAppleIAPType)type
                             success:(nonnull void (^)(NSString *transactionId, NSString *purchaseReceipt))sucess
                             failure:(nonnull void (^)(NSInteger code, NSString *message))failure{
     self.sucess = ^(NSString *transactionId, NSString *purchaseReceipt) {
-        sucess(transactionId, purchaseReceipt);
+        if(sucess){
+            sucess(transactionId, purchaseReceipt);
+        }
     };
     self.failure = ^(NSInteger code, NSString *message) {
-        failure(code, message);
+        if(failure){
+            failure(code, message);
+        }
     };
     if (purchID) {
         if ([SKPaymentQueue canMakePayments]) {
@@ -57,10 +74,14 @@
             request.delegate = self;
             [request start];
         }else{
-            failure(-1, @"");
+            if(failure){
+                failure(-1, @"");
+            }
         }
     }else {
-        failure(-1, @"purchID can not be nil");
+        if(failure){
+            failure(-1, @"purchID can not be nil");
+        }
     }
 }
 
@@ -111,6 +132,11 @@
             self.failure(-1, @"not find product");
         }
         return;
+    }
+    
+    if(self.products){
+        self.products(product);
+        self.products = nil;
     }
      
     SKProduct *p = nil;

@@ -1238,7 +1238,7 @@ PODS:
     - SJVideoPlayer/Common
   - SJVideoPlayer/ResourceLoader (3.4.3):
     - SJBaseVideoPlayer (>= 3.7.5)
-  - XMSDK_ios (0.1.5):
+  - XMSDK_ios (0.1.6):
     - AFNetworking (~> 4.0)
     - AppLovinSDK
     - Firebase
@@ -1337,7 +1337,7 @@ SPEC CHECKSUMS:
   SJBaseVideoPlayer: b3122de12225b27b71bd9a8a1f08f4dcf2f4e5ec
   SJUIKit: a40111941e408cc17d4c1c23495aa92999e814b0
   SJVideoPlayer: 4f09814f58522e0975cb2dccfda925f6c8643467
-  XMSDK_ios: 5e04cead5c3ad262f762585a7fa30fa670eb808d
+  XMSDK_ios: 076b103a7c7c59a305282dbe770ecf6af92db57b
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
