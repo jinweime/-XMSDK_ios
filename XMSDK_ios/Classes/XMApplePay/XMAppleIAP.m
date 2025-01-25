@@ -137,6 +137,14 @@
     if(self.products){
         self.products(product);
         self.products = nil;
+        return;
+    }
+    
+    if (_currentPurchaseID == nil) {
+        if (self.failure) {
+            self.failure(-1, @"not find product");
+        }
+        return;
     }
      
     SKProduct *p = nil;
@@ -145,6 +153,13 @@
             p = pro;
             break;
         }
+    }
+    
+    if (p == nil) {
+        if (self.failure) {
+            self.failure(-1, @"not find product");
+        }
+        return;
     }
      
 #if DEBUG
